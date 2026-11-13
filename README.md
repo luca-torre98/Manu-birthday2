@@ -1,65 +1,41 @@
-# 🎭 Auguri Manu — una notte all'Opera di Vienna
+# 🎭 Auguri Manu – Fidelio alla Wiener Staatsoper
 
-Un sito web regalo per i **30 anni di Manuela**: sipario animato, rivelazione a sorpresa, biglietto regalo stampabile, ambientazione da teatro d'opera e musica di **Beethoven – Für Elise**.
+Sito regalo per i 30 anni di Manuela, firmato **Luca e Chiara**. Include la filastrocca dell'invito originale, il sipario animato, la sorpresa, un biglietto regalo stampabile, loghi estratti dal PDF fornito e un accompagnamento di Beethoven. **Non mostra alcun prezzo.**
 
-Il progetto è **già completo**, senza dipendenze, registrazioni, chiavi API o compilazioni. Il file MP3, lo sfondo e gli altri asset sono inclusi nel repository e funzionano su GitHub Pages.
+## Pubblicazione nel repository già esistente
 
-## 🚀 Pubblicare su GitHub Pages
+Repository: `https://github.com/luca-torre98/Manu-birthday2`
 
-1. **Estrai** il file ZIP sul tuo computer. Non caricare il solo ZIP: devi caricare **i file e le cartelle al suo interno**.
-2. Su [GitHub](https://github.com/new), crea un nuovo repository **pubblico**, per esempio `auguri-manu`. Usa il ramo `main`.
-3. Carica **il contenuto** della cartella estratta nella **radice** del repository, mantenendo la struttura delle cartelle (in particolare `assets/` e `.github/workflows/`). Su GitHub puoi usare **Add file → Upload files → Commit changes**, trascinando i file e le cartelle. In alternativa usa GitHub Desktop o Git.
-4. Apri **Settings → Pages → Build and deployment → Source** e seleziona **GitHub Actions**. Il workflow `deploy.yml` è già incluso: non devi crearne uno nuovo.
-5. Vai in **Actions**, scegli il workflow **Pubblica il regalo di Manuela su GitHub Pages** e, se non è partito da solo, premi **Run workflow**. Aspetta che la pubblicazione termini con il segno di spunta verde.
-6. Apri il sito all'indirizzo previsto:
+1. Estrai lo ZIP sul computer.
+2. Apri il repository su GitHub, ramo `main`.
+3. Clicca **Add file → Upload files** e carica **tutti i file estratti**, non lo ZIP.
+4. Quando GitHub chiede di sovrascrivere i file omonimi, conferma il commit: i file `index.html`, `style.css`, `script.js`, i due asset già presenti e il `README.md` verranno aggiornati.
+5. Verifica in **Settings → Pages**: `Deploy from a branch` → `main` → `/(root)` → **Save**.
+6. Apri `https://luca-torre98.github.io/Manu-birthday2/` dopo che Pages ha pubblicato il nuovo commit. Se vedi la versione precedente, fai refresh forzato (`Ctrl+F5`).
 
-   `https://TUO-USERNAME.github.io/auguri-manu/`
+**Non è necessario caricare altri file.** La struttura è volutamente *piatta*: ogni file sta nella cartella principale, senza `assets/`, e tutti i riferimenti sono relativi per GitHub Pages.
 
-   Sostituisci `TUO-USERNAME` con il tuo username GitHub e `auguri-manu` con il nome effettivo del repository. Il link reale viene mostrato anche in **Settings → Pages**.
+## Contenuti
 
-**Nota:** se GitHub Pages richiede l'abilitazione di Actions o l'approvazione del workflow, concedila dalle impostazioni del repository e riesegui il workflow. Il sito non sarà online finché non avrai creato il repository e completato la pubblicazione.
+- `index.html` — sito completo e informazioni reali sullo spettacolo
+- `style.css` — scena, animazioni, grafica mobile, biglietto stampabile
+- `script.js` — sipario, pulsante musica, stampa, navigazione
+- `teatro-opera.png` — sfondo evocativo del teatro
+- `beethoven-fur-elise.mp3` — estratto strumentale locale
+- `logo-staatsoper.png` — logo estratto dal biglietto fornito
+- `logo-partner.png` — loghi partner riportati sul biglietto fornito
+- `qr-info-staatsoper.png` — QR **informativo** verso il sito ufficiale
+- `favicon.svg` — icona del sito
+- `.nojekyll` — configura la pubblicazione come sito statico
 
-### Alternativa più semplice: deploy da `main`
+## Dati verificati dal biglietto ufficiale
 
-Anche senza GitHub Actions puoi andare in **Settings → Pages → Build and deployment**, selezionare **Deploy from a branch**, scegliere **main** e la cartella **/(root)**, quindi fare **Save**. Entrambe le modalità funzionano perché `index.html` si trova nella radice.
+**Fidelio** di Ludwig van Beethoven; **sabato 9 gennaio 2027, ore 19:00**; **Wiener Staatsoper, Opernring 2, 1010 Vienna**; **balcone laterale sinistro, fila 2, posti 17 e 18**. Il giorno **14 novembre 2026** corrisponde invece alla data di compleanno sull'invito originale.
 
-## 🧪 Provare prima sul computer
+## IMPORTANTE: codici d'ingresso
 
-Basta **aprire `index.html` con Chrome, Edge, Firefox o Safari**. La grafica, la musica e la sorpresa funzionano anche offline. Se preferisci servirlo in locale, dalla cartella del progetto esegui `python -m http.server 8000` e visita <http://localhost:8000/>.
+Questo è un **biglietto regalo ricordo**, non un documento valido per l'ingresso. Il QR presente nella grafica rimanda al sito ufficiale della Wiener Staatsoper e **non** permette l'accesso. I due QR originali contenuti nel PDF acquistato sono credenziali d'ingresso monouso: **non inserirli in un repository pubblico** e condividi il PDF autentico privatamente con la persona interessata. Inoltre le condizioni stampate sui biglietti indicano che modifiche ottiche, come coprire il prezzo, possono invalidare il titolo d'ingresso. Per questo il sito non contiene né biglietti originali modificati né prezzi.
 
-### Verificare che funzioni
+## Prova locale
 
-- La pagina deve mostrare l'invito per Manuela senza rivelare subito il regalo.
-- Cliccando **ALZA IL SIPARIO** si apre il sipario, appare Vienna e parte la musica (i browser non consentono di avviarla senza interazione).
-- Il comando **Musica ON/OFF** deve mettere in pausa o riprendere l'audio.
-- Cliccando **SCOPRI IL TUO BIGLIETTO** la pagina scorre fino al regalo.
-- **Stampa o salva il biglietto** apre la finestra di stampa/salvataggio PDF.
-- Su telefono, testi e pulsanti devono rimanere leggibili.
-
-Puoi controllare i file essenziali anche con `python tests/check_site.py`. GitHub Actions esegue automaticamente lo stesso controllo prima di pubblicare il sito.
-
-## 📁 Struttura del progetto
-
-```text
-index.html                   Pagina HTML principale
-style.css                    Stili, effetti, versione mobile e stampa
-script.js                    Interazioni, animazioni, gestione musica
-assets/
-  teatro-opera.png           Scenografia originale ispirata a un teatro d'opera
-  beethoven-fur-elise.mp3    Estratto musicale di pianoforte incluso
-  favicon.svg                Icona del sito
-.github/workflows/deploy.yml Workflow per GitHub Pages
-tests/check_site.py          Controllo dei file prima del deploy
-.nojekyll                    Evita la trasformazione con Jekyll
-README.md                    Queste istruzioni
-```
-
-## ✏️ Personalizzare il contenuto
-
-Modifica `index.html` per cambiare messaggi, nome e data. La data **14 novembre 2026** indica il compleanno, **non** la data della visita a Vienna. La serata specifica e i posti dell'opera non sono indicati: non vengono inventati dettagli della prenotazione.
-
-In `style.css` puoi variare colori e caratteri; in `assets/` puoi sostituire immagini o musica lasciando invariati i nomi dei file.
-
-### Nota sulle risorse
-
-L'immagine è un'illustrazione evocativa di un teatro d'opera: **non** è una fotografia né una ricostruzione fedele della Wiener Staatsoper. La traccia audio è una resa strumentale prodotta appositamente per questo progetto, basata su un estratto della composizione in pubblico dominio *Für Elise* di Ludwig van Beethoven. Non sono richiesti servizi esterni.
+Dopo aver estratto il pacchetto, apri `index.html` in Chrome / Edge / Firefox. Testa il pulsante **ALZA IL SIPARIO**, l'audio di Beethoven, **SCOPRI I TUOI POSTI** e **Stampa o salva il biglietto regalo**. L'audio parte solo dopo un clic per rispettare le restrizioni del browser.

@@ -61,7 +61,9 @@
     document.getElementById('scrollHint').textContent = 'SCORRI PER CONTINUARE ↓';
     openingButton.disabled = true;
     introContent.setAttribute('aria-hidden', 'true');
+    introContent.setAttribute('inert', '');
     revealContent.removeAttribute('aria-hidden');
+    revealContent.removeAttribute('inert');
     window.setTimeout(() => seeTicketButton.focus({preventScroll:true}), 1250);
   });
 

@@ -167,3 +167,109 @@ body:not(.is-open) .gift-section,body:not(.is-open) .closing-section,body:not(.i
  .opera-ticket{width:100%;max-width:none;box-shadow:none;filter:none;transform:none;margin-top:15mm;grid-template-columns:minmax(0,1fr) 160px;break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
  .ticket-main{padding:30px}.ticket-stub{padding:30px 12px}.ticket-stub-age{font-size:100px}
 }
+
+/* EDIZIONE MANUELA – messaggio originale, invito Fidelio, firma Luca e Chiara */
+.stage{min-height:max(100svh,760px)}
+.stage-center{min-height:680px;max-width:1020px}
+.intro .main-heading{font-size:clamp(65px,8.8vw,135px)}
+.intro-kicker{margin:23px auto 15px}
+.birthday-poem{font:normal clamp(19px,2.1vw,26px)/1.28 var(--serif);color:#f9e1dd;letter-spacing:-.015em;max-width:890px;margin:0 auto;text-shadow:0 2px 14px #0c0017cf}
+.birthday-poem p{margin:0 0 12px}
+.birthday-poem strong{color:#f8b5cb;font-size:1.10em;font-weight:400}
+.birthday-poem .poem-emoji{font-size:.9em;white-space:nowrap}
+.signed-small{margin-top:16px;color:#f8d8d5;font-family:var(--serif);font-size:15px}
+.signed-small strong{color:#ffe1aa;font-weight:400}
+.reveal-description{max-width:750px}
+.reveal-description em{color:#f5c4d9;font-style:italic}
+.reveal-date{font-size:11px;font-weight:700;color:#f2d3a1;letter-spacing:.27em;margin:22px auto 4px}
+.reveal-date span{padding:0 12px}
+.official-branding{text-align:center;padding:24px 0 7px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.official-branding img{display:block;max-width:190px;height:auto;mix-blend-mode:multiply}
+.official-branding>span{font:italic 13px var(--serif);letter-spacing:.08em;color:#a06c69}
+.ticket-decor{display:none}
+.ticket-name{margin:18px 0 12px}
+.ticket-main h3{font-size:clamp(66px,6.3vw,94px);letter-spacing:.08em;line-height:.95}
+.ticket-subtitle{font-size:21px}
+.ticket-main .ticket-rule{margin-top:26px}
+.ticket-main{padding-top:30px;padding-bottom:28px}
+.ticket-details{gap:21px 18px}
+.ticket-details div:nth-child(3){grid-column:1/-1}
+.ticket-details .venue-detail strong small{display:block;color:#946774;font-size:11px;font-weight:400;padding-top:5px}
+.ticket-details strong{font-size:13px}
+.ticket-bottom-logos{margin-top:30px;padding:13px 0 0;border-top:1px solid #d8bfc0;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.ticket-bottom-logos img{max-width:145px;width:100%;height:auto;mix-blend-mode:multiply}
+.ticket-bottom-logos>span{font-size:8px;letter-spacing:.15em;font-weight:700;color:#ad7384}
+.ticket-stub{padding:36px 14px 24px}
+.stub-pretitle{font-size:8px;letter-spacing:.09em;color:#f1d8bc}
+.seat-badges{display:flex;gap:9px;align-items:center;justify-content:center;margin:10px 0}
+.seat-badges span{font:normal 52px/.9 var(--serif);color:#fff2d4}
+.seat-badges i{font:normal 18px var(--serif);color:#e9b978}
+.qr-wrap{background:#fff9ef;display:grid;place-items:center;padding:9px;border:2px solid #ecd1ae;box-shadow:0 9px 25px #1c00175e}
+.qr-wrap img{display:block;width:min(100%,145px);height:auto;image-rendering:auto}
+.ticket-stub-bottom{font-size:10px;letter-spacing:.19em}
+.ticket-stub-bottom small{display:block;font-size:7px;letter-spacing:.08em;margin-top:5px;color:#f4d9d4}
+.ticket-stub-code{font-size:8px;letter-spacing:.1em}
+.real-ticket-note{max-width:795px;font-size:11px;line-height:1.65;color:#875667;margin:27px auto 0}
+.real-ticket-note strong{font-weight:800}
+.gift-actions{display:flex;justify-content:center;align-items:center;gap:20px 40px;flex-wrap:wrap;margin:18px auto 0}
+.gift-actions .print-button{margin:0}
+.theater-link{color:#984969;font-size:12px;text-underline-offset:5px;font-weight:700}
+.theater-link:hover{color:#561c30}
+.closing-signature{font:normal 20px/1.4 var(--serif);color:#f5dfcb;margin:20px auto 11px}
+.closing-signature em{font-size:30px;color:#f7b9d1}
+.closing-inner>small{margin-top:10px}
+@media(max-width:700px){
+  .stage{min-height:max(100svh,850px);padding-inline:22px}
+  .stage-center{min-height:750px}
+  .intro .main-heading{font-size:clamp(62px,12vw,91px)}
+  .intro-kicker{margin:19px auto 13px;font-size:8px}
+  .birthday-poem{font-size:clamp(17px,4.1vw,22px);line-height:1.27;letter-spacing:0;padding-inline:7px}
+  .birthday-poem p{margin-bottom:12px}
+  .birthday-poem br{display:none}
+  .birthday-poem strong{font-size:1.09em}
+  .signed-small{font-size:13px;margin-top:19px}
+  .primary-button{margin-top:19px}
+  .reveal-date{font-size:9px;letter-spacing:.1em;line-height:1.65}
+  .reveal-date span{padding:0 4px}
+  .ticket-main{padding:26px 25px}
+  .official-branding{padding-top:16px}
+  .official-branding img{width:176px}
+  .ticket-main h3{font-size:clamp(54px,13vw,75px)}
+  .ticket-details{gap:18px 8px}
+  .ticket-details strong{font-size:11px;line-height:1.42}
+  .ticket-details span{font-size:8px}
+  .ticket-bottom-logos img{max-width:109px}
+  .ticket-bottom-logos>span{font-size:7px;max-width:105px}
+  .ticket-stub{padding:19px 18px;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:'top top' 'pre pre' 'seat qr' 'bottom bottom' 'code code';gap:8px;min-height:0}
+  .ticket-stub-top{grid-area:top;text-align:center;max-width:none}
+  .stub-pretitle{grid-area:pre;text-align:center}
+  .seat-badges{grid-area:seat}
+  .seat-badges span{font-size:45px}
+  .qr-wrap{grid-area:qr;justify-self:center;padding:5px;max-width:120px}
+  .ticket-stub-bottom{grid-area:bottom;max-width:none;text-align:center}
+  .ticket-stub-code{grid-area:code;text-align:center}
+  .real-ticket-note{font-size:10px;line-height:1.7;padding:0 10px}
+  .gift-actions{gap:18px}
+  .closing-signature{font-size:18px}
+}
+@media(max-width:360px){
+  .stage{min-height:930px}
+  .birthday-poem{font-size:16px}
+  .intro .main-heading{font-size:62px}
+  .ticket-main h3{font-size:52px}
+  .ticket-main{padding:25px 18px}
+}
+@media print{
+  .opera-ticket{grid-template-columns:minmax(0,1fr) 215px!important;max-width:100%;margin:22mm auto 0}
+  .ticket-main{padding:22px 29px}
+  .official-branding{padding-top:9px}
+  .official-branding img{width:165px}
+  .ticket-details{gap:14px 15px}
+  .ticket-main h3{font-size:67px}
+  .ticket-main .ticket-rule{margin:16px auto}
+  .ticket-bottom-logos{margin-top:17px}
+  .ticket-stub{display:flex;flex-direction:column;justify-content:space-around;padding:20px 15px}
+  .seat-badges span{font-size:48px}
+  .qr-wrap img{max-width:130px}
+  .real-ticket-note,.gift-actions{display:none!important}
+}

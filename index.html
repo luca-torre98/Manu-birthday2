@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2c0b19">
+  <meta name="description" content="Un invito speciale per i 30 anni di Manuela: una sorpresa tra musica, magia e Vienna.">
+  <title>Auguri Manu · Il tuo regalo a Vienna</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <audio id="soundtrack" preload="auto" loop>
+    <source src="assets/beethoven-fur-elise.mp3" type="audio/mpeg">
+  </audio>
+
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <main id="contenuto">
+    <section class="stage" id="inizio" aria-label="Invito di compleanno">
+      <div class="stage-background" aria-hidden="true"></div>
+      <div class="stage-grain" aria-hidden="true"></div>
+      <div class="stage-vignette" aria-hidden="true"></div>
+      <div class="curtain curtain-left" aria-hidden="true"></div>
+      <div class="curtain curtain-right" aria-hidden="true"></div>
+      <div class="curtain-rope left" aria-hidden="true"></div>
+      <div class="curtain-rope right" aria-hidden="true"></div>
+
+      <header class="masthead">
+        <div class="masthead-brand">
+          <span class="brand-sign" aria-hidden="true">✳</span>
+          <div class="brand-text"><span>UN INVITO</span><span>STRAORDINARIO</span></div>
+        </div>
+        <div class="masthead-center">MANUELA <span>·</span> 30</div>
+        <button class="audio-toggle" id="audioToggle" type="button" aria-pressed="false" aria-label="Attiva la musica di Beethoven">
+          <span class="audio-icon" id="audioIcon" aria-hidden="true">♫</span>
+          <span class="audio-copy" id="audioCopy">Musica <b>OFF</b></span>
+          <span class="audio-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+        </button>
+      </header>
+
+      <div class="hero-frame" aria-hidden="true">
+        <i class="frame-top-left"></i><i class="frame-top-right"></i>
+        <i class="frame-bottom-left"></i><i class="frame-bottom-right"></i>
+      </div>
+
+      <div class="stage-center">
+        <div class="intro panel-content" id="introContent">
+          <p class="chapter"><span class="chapter-line"></span> 14 NOVEMBRE 2026 <span class="chapter-dot">✦</span> ATTO I <span class="chapter-line"></span></p>
+          <div class="star-decoration" aria-hidden="true">✧ &nbsp; ✦ &nbsp; ✧</div>
+          <h1 class="main-heading">Auguri, <em>Manu.</em></h1>
+          <p class="intro-kicker">30 ANNI. UNA GRANDE SORPRESA.</p>
+          <p class="intro-text">Cara Manuela, mettiti elegante.<br>Tra musica, applausi e un po' di magia,<br>c'è qualcosa di speciale che ti aspetta.</p>
+          <button class="primary-button" id="openCurtain" type="button">
+            <span class="button-flourish" aria-hidden="true">✦</span>
+            ALZA IL SIPARIO
+            <span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="small-remark">Lascia che Beethoven accompagni la sorpresa <span aria-hidden="true">♪</span></p>
+        </div>
+
+        <div class="reveal panel-content" id="revealContent" aria-hidden="true">
+          <p class="chapter"><span class="chapter-line"></span> IL TUO REGALO <span class="chapter-dot">✦</span> ATTO II <span class="chapter-line"></span></p>
+          <div class="star-decoration" aria-hidden="true">✧ &nbsp; ✦ &nbsp; ✧</div>
+          <p class="reveal-kicker">PROSSIMA FERMATA</p>
+          <h2 class="main-heading reveal-heading">Una notte<br>all'<em>Opera.</em></h2>
+          <div class="divider-ornament"><span></span> ♡ <span></span></div>
+          <p class="reveal-description">Per i tuoi 30 anni, ti aspetta <strong>una notte a Vienna</strong><br class="desktop-break"> e una serata alla meravigliosa <strong>Wiener Staatsoper.</strong></p>
+          <button class="primary-button" id="seeTicket" type="button">
+            <span class="button-flourish" aria-hidden="true">✦</span>
+            SCOPRI IL TUO BIGLIETTO
+            <span class="button-arrow" aria-hidden="true">↓</span>
+          </button>
+          <p class="small-remark">La città della musica ti aspetta.</p>
+        </div>
+      </div>
+
+      <div class="sparkle-field" id="sparkles" aria-hidden="true"></div>
+      <div class="stage-footer">
+        <span>PREPARATI A QUALCOSA DI INDIMENTICABILE</span>
+        <span class="footer-stamp">EST. MMXXVI</span>
+        <span id="scrollHint">ALZA IL SIPARIO PER INIZIARE</span>
+      </div>
+    </section>
+
+    <section class="gift-section" id="regalo" aria-labelledby="giftTitle">
+      <div class="sunray sunray-one" aria-hidden="true"></div>
+      <div class="sunray sunray-two" aria-hidden="true"></div>
+      <div class="gift-section-inner">
+        <p class="section-eyebrow"><span>✦</span> UN DONO DA VIVERE <span>✦</span></p>
+        <h2 class="gift-title" id="giftTitle">Non un oggetto.<br><em>Un ricordo.</em></h2>
+        <p class="gift-lead">Le sorprese più belle non si scartano: si vivono.</p>
+
+        <article class="opera-ticket" aria-label="Biglietto regalo per Manuela">
+          <div class="ticket-main">
+            <div class="ticket-topline"><span>INVITO PERSONALE</span><span class="tiny-star">✳</span><span>EDIZIONE SPECIALE</span></div>
+            <p class="ticket-decor" aria-hidden="true">✦ &nbsp; ❦ &nbsp; ✦</p>
+            <p class="ticket-name">PER MANUELA</p>
+            <h3>Una notte<br><em>a Vienna</em></h3>
+            <p class="ticket-subtitle">E una serata alla <strong>Wiener Staatsoper</strong></p>
+            <div class="ticket-rule"></div>
+            <div class="ticket-details">
+              <div><span>OCCASIONE</span><strong>Il tuo 30° compleanno</strong></div>
+              <div><span>DESTINAZIONE</span><strong>Vienna, Austria</strong></div>
+              <div><span>ESPERIENZA</span><strong>Una notte + una serata all'opera</strong></div>
+            </div>
+          </div>
+          <aside class="ticket-stub" aria-label="Talloncino ricordo">
+            <div class="ticket-stub-top">WIEN · AT</div>
+            <div class="ticket-stub-symbol" aria-hidden="true">♫</div>
+            <div class="ticket-stub-age">30</div>
+            <div class="ticket-stub-bottom">UNA NOTTE<br>SPECIALE</div>
+            <div class="ticket-stub-code">NO. 001430</div>
+          </aside>
+        </article>
+
+        <button class="print-button" id="printTicket" type="button"><span aria-hidden="true">↧</span> Stampa o salva il biglietto</button>
+
+        <div class="three-acts">
+          <div class="act-item"><div class="act-number">01</div><div><h3>La città</h3><p>Vienna, tra palazzi, luci e strade da scoprire.</p></div></div>
+          <div class="act-separator" aria-hidden="true">✦</div>
+          <div class="act-item"><div class="act-number">02</div><div><h3>La musica</h3><p>Una serata alla Wiener Staatsoper, nel cuore della città.</p></div></div>
+          <div class="act-separator" aria-hidden="true">✦</div>
+          <div class="act-item"><div class="act-number">03</div><div><h3>La magia</h3><p>Un ricordo speciale da portare a casa.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section" aria-labelledby="closingTitle">
+      <div class="closing-inner">
+        <span class="closing-flourish" aria-hidden="true">✧ &nbsp; ✦ &nbsp; ✧</span>
+        <p>IL GRAN FINALE</p>
+        <h2 id="closingTitle">Le sorprese migliori<br>sono quelle <em>più grandi.</em></h2>
+        <p class="closing-line">E questa è soltanto l'inizio.</p>
+        <span class="closing-heart" aria-hidden="true">♡</span>
+        <strong>BUON COMPLEANNO, MANU!</strong>
+        <small>14 · 11 · 2026</small>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer"><span>Un piccolo sito, per una grandissima sorpresa.</span><span>Beethoven · Für Elise (estratto per pianoforte)</span></footer>
+</body>
+</html>
